@@ -6,6 +6,8 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 
 ### 🐶 [DogBot](https://dogbot.squareweb.app/)
 
+<img src="assets/dogbot-mock.svg" alt="Mockup de conversa com o DogBot no WhatsApp" width="480" />
+
 Assistente pessoal multifuncional direto no WhatsApp, organizado em módulos independentes:
 
 - 💰 **Financeiro** — contas, cartões, orçamentos e agendamentos recorrentes, com dados cifrados por usuário; entende comandos em linguagem natural via IA (ex: "gastei 50 reais de uber", "paguei 800 de aluguel todo dia 5")
@@ -22,6 +24,8 @@ Toda a operação é gerenciada por um painel administrativo próprio em React.
 Projeto fechado (código-fonte privado) — inclui também um app companion com bolha flutuante de atalhos (Flutter).
 
 ### [GreenLightFlow](https://www.greenlightflow.com/)
+
+<img src="assets/greenlightflow-preview.png" alt="GreenLightFlow — gestão de redes sociais" width="480" />
 
 SaaS de agendamento e publicação em redes sociais (Instagram, YouTube, TikTok). Fundador e desenvolvedor principal — arquitetei e construí o produto do zero: autenticação, fluxo OAuth para conectar contas, agendamento e publicação via APIs oficiais.
 

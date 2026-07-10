@@ -1,0 +1,72 @@
+<svg width="640" height="560" viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" font-family="Manrope, 'Segoe UI', sans-serif">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#F5D21E" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#F5D21E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="border" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5D21E" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#F5D21E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="560" fill="#0A101E"/>
+  <rect width="640" height="300" fill="url(#glow)"/>
+
+  <!-- outer glow border -->
+  <rect x="20" y="20" width="600" height="520" rx="26" fill="url(#border)"/>
+
+  <!-- card -->
+  <rect x="22" y="22" width="596" height="516" rx="25" fill="#0E1526" stroke="#1B2740" stroke-width="1"/>
+
+  <!-- header -->
+  <rect x="22" y="22" width="596" height="66" rx="25" fill="#111A2E"/>
+  <rect x="22" y="66" width="596" height="22" fill="#111A2E"/>
+  <line x1="22" y1="88" x2="618" y2="88" stroke="#1B2740" stroke-width="1"/>
+
+  <circle cx="60" cy="55" r="19" fill="#0E1526" stroke="#F5D21E" stroke-width="1.5"/>
+  <text x="60" y="61" font-size="18" text-anchor="middle" fill="#F5D21E" font-weight="700">🐶</text>
+
+  <text x="90" y="51" font-size="15" font-weight="700" fill="#F4F7FF">DogBot</text>
+  <circle cx="94" cy="68" r="3.5" fill="#25D366"/>
+  <text x="102" y="71" font-size="12" fill="#5CE58F">online agora</text>
+
+  <!-- chat area -->
+  <!-- bubble 1: user -->
+  <rect x="270" y="108" width="326" height="46" rx="14" fill="#054D3B"/>
+  <path d="M596 140 l14 14 -14 4 z" fill="#054D3B"/>
+  <text x="546" y="136" font-size="14" fill="#E7FFF3" text-anchor="end">Gastei R$ 45 no mercado 🛒</text>
+
+  <!-- bubble 2: bot -->
+  <rect x="42" y="166" width="420" height="70" rx="14" fill="#182236" stroke="#3A331A" stroke-width="1"/>
+  <path d="M42 198 l-14 14 14 4 z" fill="#182236"/>
+  <text x="60" y="192" font-size="14" fill="#DCE4F2">
+    <tspan x="60" dy="0">✅ Anotado! Você já gastou R$ 320 em Mercado</tspan>
+    <tspan x="60" dy="20">este mês. Restam R$ 180 do limite.</tspan>
+  </text>
+
+  <!-- bubble 3: user -->
+  <rect x="234" y="256" width="362" height="46" rx="14" fill="#054D3B"/>
+  <path d="M596 288 l14 14 -14 4 z" fill="#054D3B"/>
+  <text x="580" y="284" font-size="14" fill="#E7FFF3" text-anchor="end">Bota "Blinding Lights" na fila 🎵</text>
+
+  <!-- bubble 4: bot -->
+  <rect x="42" y="314" width="420" height="46" rx="14" fill="#182236" stroke="#3A331A" stroke-width="1"/>
+  <path d="M42 346 l-14 14 14 4 z" fill="#182236"/>
+  <text x="60" y="342" font-size="14" fill="#DCE4F2">🎶 Adicionei à fila colaborativa. Já pode votar 👍👎</text>
+
+  <!-- bubble 5: user -->
+  <rect x="222" y="374" width="374" height="46" rx="14" fill="#054D3B"/>
+  <path d="M596 406 l14 14 -14 4 z" fill="#054D3B"/>
+  <text x="580" y="402" font-size="14" fill="#E7FFF3" text-anchor="end">Me lembra de pagar o aluguel dia 5 💸</text>
+
+  <!-- bubble 6: bot -->
+  <rect x="42" y="432" width="420" height="46" rx="14" fill="#182236" stroke="#3A331A" stroke-width="1"/>
+  <path d="M42 464 l-14 14 14 4 z" fill="#182236"/>
+  <text x="60" y="460" font-size="14" fill="#DCE4F2">⏰ Feito! Lembrete criado pro dia 5 de todo mês.</text>
+
+  <!-- footer badge -->
+  <rect x="205" y="502" width="230" height="28" rx="14" fill="#0F2B1F" stroke="#25D366" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="222" cy="516" r="4" fill="#25D366"/>
+  <text x="232" y="520" font-size="12" font-weight="700" fill="#5CE58F">Roda 100% dentro do WhatsApp</text>
+</svg>
