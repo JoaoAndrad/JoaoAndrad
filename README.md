@@ -31,6 +31,28 @@ SaaS de agendamento e publicação em redes sociais (Instagram, YouTube, TikTok)
 
 **Stack:** Node.js · Express · PostgreSQL · TypeScript
 
+### 💬 Herm
+
+Plataforma B2B de chatbot para WhatsApp: parceiros (donos de pequenos negócios) criam
+fluxos de atendimento num flow builder visual e o bot conversa com os clientes finais
+direto no WhatsApp.
+
+- 🧩 **Flow builder visual** — editor drag-and-drop (React Flow) com undo/redo,
+  copiar/colar de blocos e templates de cadastro prontos
+- 🛍️ **Catálogo com árvore de categorias** — produtos e serviços com variações
+  (tamanho/tipo), carrinho, checkout e acompanhamento de pedidos
+- 🎠 **Carrossel nativo do WhatsApp** — navegação de catálogo com cartões deslizáveis;
+  precisei investigar e corrigir um bug de protocolo numa lib open-source de WhatsApp
+  pra viabilizar isso nos 3 clientes (Desktop/Android/iPhone)
+- 🔔 **Notificações configuráveis** — alertas de pedido novo, contato novo, estoque
+  baixo e resumo diário, cada um pode ser ligado/desligado por número
+- 🏢 **Multi-tenant de verdade** — isolamento por parceiro, número de WhatsApp
+  compartilhado ou dedicado por conta
+
+**Stack:** Node.js · TypeScript · Express · React · Prisma · PostgreSQL · Baileys
+
+Projeto em desenvolvimento — sem deploy público ainda.
+
 ## 🛠️ Tecnologias
 
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
