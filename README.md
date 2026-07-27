@@ -2,6 +2,8 @@
 
 Construo produtos de ponta a ponta, do backend à experiência do usuário.
 
+**Portfólio:** [joaoandrad.github.io](https://joaoandrad.github.io/)
+
 ## Projetos
 
 ### <img src="assets/herm-logo.svg" width="40" height="40" valign="middle" /> Herm
@@ -10,7 +12,7 @@ Plataforma B2B de chatbot para WhatsApp: cada parceiro monta seus próprios flux
 atendimento num flow builder visual, e o bot conversa direto com os clientes finais
 pelo WhatsApp — sem precisar escrever uma linha de código.
 
-- Flow builder visual (React Flow) com undo/redo e templates de cadastro
+- Flow builder visual (React Flow) robusto e com vários templates personalizáveis
 - Catálogo com categorias, variações, carrinho e checkout
 - Carrossel nativo do WhatsApp para navegação de catálogo
 - Isolamento real entre contas, número de WhatsApp dedicado por parceiro
@@ -56,9 +58,7 @@ arquitetei e construí o produto do zero.
 
 - Publicação em Instagram, YouTube, TikTok e LinkedIn, múltiplas contas por provedor
 - Fluxo editorial (rascunho → revisado → publicado) antes de qualquer agendamento
-- Scheduler de duas fases para o Instagram — o container é preparado minutos antes do
-  horário marcado e publicado no momento exato por um poller separado, sem depender de
-  fila externa (Redis/BullMQ)
+- Sistema de armazenamento de mídia próprio usando S3 e Blobs
 - Corte e edições básicas de imagem direto no navegador, sem custo de processamento
   no servidor
 
