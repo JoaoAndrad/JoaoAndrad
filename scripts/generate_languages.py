@@ -7,8 +7,20 @@ import urllib.request
 USERNAME = os.environ["GH_USERNAME"]
 TOKEN = os.environ["GH_TOKEN"]
 OUTPUT_PATH = "generated/languages.svg"
-EXCLUDE_REPOS = {f"{USERNAME}/{USERNAME}"}
 MAX_LANGS = 6
+TITLE = "Linguagens usadas nos ultimos projetos"
+
+REPOS = [
+    "GreenlightMidia/frontend",
+    "GreenlightMidia/backend",
+    "Dog-Bot-Assistente/DogBot-Back",
+    "Dog-Bot-Assistente/DogBot-Front",
+    "Dog-Bot-Assistente/DogBubble",
+    "Herm-Chat/frontend",
+    "Herm-Chat/backend",
+    "Herm-Chat/bot",
+    "JoaoAndrad/Editor-Planta-Baixa",
+]
 
 LANGUAGE_COLORS = {
     "TypeScript": "#3178c6",
@@ -45,24 +57,10 @@ def api_get(url):
         return json.loads(response.read())
 
 
-def fetch_repos():
-    repos = []
-    page = 1
-    while True:
-        batch = api_get(
-            f"https://api.github.com/user/repos?per_page=100&page={page}&affiliation=owner&visibility=all"
-        )
-        if not batch:
-            break
-        repos.extend(batch)
-        page += 1
-    return [r for r in repos if not r["fork"] and r["full_name"] not in EXCLUDE_REPOS]
-
-
-def aggregate_languages(repos):
+def aggregate_languages(repo_names):
     totals = {}
-    for repo in repos:
-        languages = api_get(repo["languages_url"])
+    for full_name in repo_names:
+        languages = api_get(f"https://api.github.com/repos/{full_name}/languages")
         for name, byte_count in languages.items():
             totals[name] = totals.get(name, 0) + byte_count
     return totals
@@ -72,9 +70,10 @@ def render_svg(totals):
     total_bytes = sum(totals.values()) or 1
     ranked = sorted(totals.items(), key=lambda item: item[1], reverse=True)[:MAX_LANGS]
 
-    width, row_height, top_padding = 300, 28, 50
-    height = top_padding + row_height * len(ranked) + 10
-    bar_x, bar_width = 130, 150
+    width, row_height, top_padding = 340, 28, 50
+    height = top_padding + row_height * len(ranked) + 14
+    bar_x, bar_width = 140, 140
+    pct_x = bar_x + bar_width + 12
 
     rows = []
     y = top_padding
@@ -86,20 +85,19 @@ def render_svg(totals):
     <text x="26" y="{y}" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">{name}</text>
     <rect x="{bar_x}" y="{y - 10}" width="{bar_width}" height="8" rx="4" fill="#30363d" />
     <rect x="{bar_x}" y="{y - 10}" width="{bar_width * pct / 100:.1f}" height="8" rx="4" fill="{color}" />
-    <text x="{bar_x + bar_width + 8}" y="{y}" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">{pct:.1f}%</text>""")
+    <text x="{pct_x}" y="{y}" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">{pct:.1f}%</text>""")
         y += row_height
 
     return f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
   <rect width="{width}" height="{height}" rx="10" fill="#0d1117" stroke="#30363d" />
-  <text x="14" y="24" fill="#c9d1d9" font-size="14" font-weight="600" font-family="'Segoe UI', sans-serif">Linguagens mais usadas</text>
+  <text x="14" y="24" fill="#c9d1d9" font-size="14" font-weight="600" font-family="'Segoe UI', sans-serif">{TITLE}</text>
   {''.join(rows)}
 </svg>
 """
 
 
 def main():
-    repos = fetch_repos()
-    totals = aggregate_languages(repos)
+    totals = aggregate_languages(REPOS)
     svg = render_svg(totals)
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
