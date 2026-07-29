@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate languages SVG
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
           GH_USERNAME: JoaoAndrad
         run: python scripts/generate_languages.py
 

@@ -50,7 +50,7 @@ def fetch_repos():
     page = 1
     while True:
         batch = api_get(
-            f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}&type=owner"
+            f"https://api.github.com/user/repos?per_page=100&page={page}&affiliation=owner&visibility=all"
         )
         if not batch:
             break
