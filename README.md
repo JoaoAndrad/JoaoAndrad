@@ -31,6 +31,6 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 ![Swift](https://img.shields.io/badge/-Swift-000000?style=flat-square&logo=swift&logoColor=white)
 ![CMake](https://img.shields.io/badge/-CMake-000000?style=flat-square&logo=cmake&logoColor=white)
 
-## Linguagens mais usadas
+## Linguagens usadas nos ultimos projetos
 
-![Top Langs](./generated/languages.svg)
+![Top Langs](./generated/languages.svg?v=0)

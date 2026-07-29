@@ -2,11 +2,14 @@
 and renders a static SVG bar showing the language breakdown."""
 import json
 import os
+import re
 import urllib.request
 
 USERNAME = os.environ["GH_USERNAME"]
 TOKEN = os.environ["GH_TOKEN"]
+RUN_ID = os.environ.get("GITHUB_RUN_ID", "0")
 OUTPUT_PATH = "generated/languages.svg"
+README_PATH = "README.md"
 MAX_LANGS = 6
 TITLE = "Linguagens usadas nos ultimos projetos"
 
@@ -96,12 +99,25 @@ def render_svg(totals):
 """
 
 
+def bump_readme_cache_bust():
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        content = f.read()
+    updated = re.sub(
+        r"(generated/languages\.svg)(\?v=\d+)?",
+        rf"\1?v={RUN_ID}",
+        content,
+    )
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(updated)
+
+
 def main():
     totals = aggregate_languages(REPOS)
     svg = render_svg(totals)
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(svg)
+    bump_readme_cache_bust()
 
 
 if __name__ == "__main__":
