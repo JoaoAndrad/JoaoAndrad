@@ -33,4 +33,4 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 
 ## Linguagens mais usadas
 
-![Top Langs](https://raw.githubusercontent.com/JoaoAndrad/JoaoAndrad/output/generated/languages.svg)
+![Top Langs](./generated/languages.svg)
