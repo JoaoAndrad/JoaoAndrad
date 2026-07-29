@@ -33,4 +33,4 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 
 ## Linguagens mais usadas
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoAndrad&layout=compact&theme=dark)
+![Top Langs](https://raw.githubusercontent.com/JoaoAndrad/JoaoAndrad/output/generated/languages.svg)
