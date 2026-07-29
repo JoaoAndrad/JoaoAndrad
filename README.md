@@ -30,3 +30,7 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat-square&logo=docker&logoColor=white)
 ![Swift](https://img.shields.io/badge/-Swift-000000?style=flat-square&logo=swift&logoColor=white)
 ![CMake](https://img.shields.io/badge/-CMake-000000?style=flat-square&logo=cmake&logoColor=white)
+
+## Linguagens mais usadas
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoAndrad&layout=compact&theme=dark)
