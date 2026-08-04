@@ -2,31 +2,31 @@
   <rect width="340" height="232" rx="10" fill="#0d1117" stroke="#30363d" />
   <text x="14" y="24" fill="#c9d1d9" font-size="14" font-weight="600" font-family="'Segoe UI', sans-serif">Linguagens usadas nos ultimos projetos</text>
   
-    <circle cx="14" cy="45" r="5" fill="#f1e05a" />
-    <text x="26" y="50" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">JavaScript</text>
+    <circle cx="14" cy="45" r="5" fill="#3178c6" />
+    <text x="26" y="50" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">TypeScript</text>
     <rect x="140" y="40" width="140" height="8" rx="4" fill="#30363d" />
-    <rect x="140" y="40" width="64.4" height="8" rx="4" fill="#f1e05a" />
-    <text x="292" y="50" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">46.0%</text>
-    <circle cx="14" cy="73" r="5" fill="#3178c6" />
-    <text x="26" y="78" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">TypeScript</text>
+    <rect x="140" y="40" width="73.6" height="8" rx="4" fill="#3178c6" />
+    <text x="292" y="50" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">52.6%</text>
+    <circle cx="14" cy="73" r="5" fill="#f1e05a" />
+    <text x="26" y="78" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">JavaScript</text>
     <rect x="140" y="68" width="140" height="8" rx="4" fill="#30363d" />
-    <rect x="140" y="68" width="62.4" height="8" rx="4" fill="#3178c6" />
-    <text x="292" y="78" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">44.6%</text>
+    <rect x="140" y="68" width="55.0" height="8" rx="4" fill="#f1e05a" />
+    <text x="292" y="78" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">39.3%</text>
     <circle cx="14" cy="101" r="5" fill="#563d7c" />
     <text x="26" y="106" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">CSS</text>
     <rect x="140" y="96" width="140" height="8" rx="4" fill="#30363d" />
-    <rect x="140" y="96" width="6.1" height="8" rx="4" fill="#563d7c" />
-    <text x="292" y="106" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">4.4%</text>
+    <rect x="140" y="96" width="5.3" height="8" rx="4" fill="#563d7c" />
+    <text x="292" y="106" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">3.8%</text>
     <circle cx="14" cy="129" r="5" fill="#e34c26" />
     <text x="26" y="134" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">HTML</text>
     <rect x="140" y="124" width="140" height="8" rx="4" fill="#30363d" />
-    <rect x="140" y="124" width="4.0" height="8" rx="4" fill="#e34c26" />
-    <text x="292" y="134" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">2.8%</text>
+    <rect x="140" y="124" width="3.4" height="8" rx="4" fill="#e34c26" />
+    <text x="292" y="134" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">2.4%</text>
     <circle cx="14" cy="157" r="5" fill="#00B4AB" />
     <text x="26" y="162" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">Dart</text>
     <rect x="140" y="152" width="140" height="8" rx="4" fill="#30363d" />
-    <rect x="140" y="152" width="2.0" height="8" rx="4" fill="#00B4AB" />
-    <text x="292" y="162" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">1.4%</text>
+    <rect x="140" y="152" width="1.7" height="8" rx="4" fill="#00B4AB" />
+    <text x="292" y="162" fill="#8b949e" font-size="11" font-family="'Segoe UI', sans-serif">1.2%</text>
     <circle cx="14" cy="185" r="5" fill="#f34b7d" />
     <text x="26" y="190" fill="#c9d1d9" font-size="12" font-family="'Segoe UI', sans-serif">C++</text>
     <rect x="140" y="180" width="140" height="8" rx="4" fill="#30363d" />
