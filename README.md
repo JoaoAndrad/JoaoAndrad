@@ -35,4 +35,4 @@ Construo produtos de ponta a ponta, do backend à experiência do usuário.
 
 ## Linguagens usadas nos ultimos projetos
 
-![Top Langs](./generated/languages.svg?v=33250061288)
+![Top Langs](./generated/languages.svg?v=33305837641)
